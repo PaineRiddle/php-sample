@@ -1,6 +1,6 @@
-FROM daocloud.io/php:5.6-cli
+FROM daocloud.io/library/php:5.5-alpine
 
 COPY . /app
-WORKDIR /app
+WORKDIR /
 EXPOSE 80
 CMD [ "php", "./hello.php" ]
